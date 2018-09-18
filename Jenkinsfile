@@ -10,7 +10,7 @@ node {
     try {
         stage('build') {
             sh "echo build"
-            slackSend color: 'good', message: "jenkins notification test2"
+            slackSend color: 'good', message: "jenkins SCM Polling test"
         }
     } catch(err) {
         sh "echo error"
